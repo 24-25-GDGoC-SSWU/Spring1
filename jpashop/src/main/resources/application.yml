@@ -1,0 +1,17 @@
+spring:
+  datasource: #띄어쓰기 2칸
+    url: jdbc:h2:tcp://localhost/~/jpashop
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        # show_sql: true #띄어쓰기 8칸
+        format_sql: true #띄어쓰기 8칸
+logging.level:
+  org.hibernate.SQL: debug
+  #org.hibernate.orm.jdbc.bind: trace
